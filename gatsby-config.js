@@ -77,22 +77,22 @@ module.exports = {
 							return allMarkdownRemark.edges.map(edge => {
 								const { frontmatter, fields } = edge.node
 								return Object.assign({}, frontmatter, {
-									description: frontmatter.artist,
+									description: frontmatter.artist + ' — ' + frontmatter.title,
 									date: frontmatter.date,
 									url: site.siteMetadata.siteUrl + fields.slug,
 									guid: site.siteMetadata.siteUrl + fields.slug,
+									image_url: 'foo',
 									custom_elements: [
 										{
 											'content:encoded':
-												'🎵 ' +
+												'🎵 #NowPlaying ' +
 												frontmatter.artist +
 												' — ' +
 												frontmatter.title +
 												' ' +
+												(frontmatter.artistTwitter ? frontmatter.artistTwitter + ' ' : '') +
 												(frontmatter.url ? frontmatter.url : '') +
-												' 📻 #NowPlaying on ' +
-												site.siteMetadata.siteUrl +
-												fields.slug
+												' | '
 										}
 									]
 								})
@@ -113,6 +113,7 @@ module.exports = {
 											frontmatter {
 												title
 												artist
+												artistTwitter
 												date
 												url
 											}
