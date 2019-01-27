@@ -84,12 +84,13 @@ module.exports = {
 									custom_elements: [
 										{
 											'content:encoded':
+												'🎵 ' +
 												frontmatter.artist +
 												' — ' +
 												frontmatter.title +
 												' ' +
-												frontmatter.url +
-												' | ' +
+												(frontmatter.url ? frontmatter.url : '') +
+												' 📻 #NowPlaying on ' +
 												site.siteMetadata.siteUrl +
 												fields.slug
 										}
@@ -113,6 +114,7 @@ module.exports = {
 												title
 												artist
 												date
+												url
 											}
 										}
 									}

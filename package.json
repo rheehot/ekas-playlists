@@ -11,6 +11,7 @@
 	"main": "n/a",
 	"scripts": {
 		"build": "gatsby build",
+		"build-serve": "gatsby build && gatsby serve",
 		"clean": "rm -rf public && rm -rf .cache",
 		"deploy": "gatsby build --prefix-paths && gh-pages -d public",
 		"dev": "gatsby develop",

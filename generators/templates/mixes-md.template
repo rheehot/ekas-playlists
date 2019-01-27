@@ -3,7 +3,7 @@ title: {{title}}
 description: {{description}}
 icon: {{icon}}
 date: "{{date}}"
-url: {{url}}
+url: {{{url}}}
 {{tags}}
 openExternal: {{openExternal}}
 draft: {{draft}}
@@ -11,4 +11,4 @@ draft: {{draft}}
 
 {{{body}}}
 
-{{url}}
+{{{url}}}

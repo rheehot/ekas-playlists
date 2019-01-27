@@ -1,8 +1,8 @@
 ---
 title: On the Sunshine
 artist: Spiritualized
-date: "2019-01-27"
-url: https://open.spotify.com/track/6xALY6wGGzQZl36A3ATnFq?si&#x3D;49iQymZaTZiKsp1UfkGB9w
+date: '2019-01-27'
+url: https://open.spotify.com/track/6xALY6wGGzQZl36A3ATnFq?si=lUwasuJmQbaWZOQsxg2G2Q
 tags:
   - test
 draft: false
