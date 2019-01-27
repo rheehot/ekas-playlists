@@ -1,0 +1,12 @@
+---
+title: {{title}}
+artist: {{artist}}
+date: "{{date}}"
+url: {{url}}
+{{tags}}
+draft: {{draft}}
+---
+
+{{{body}}}
+
+{{url}}

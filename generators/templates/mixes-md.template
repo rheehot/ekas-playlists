@@ -1,0 +1,14 @@
+---
+title: {{title}}
+description: {{description}}
+icon: {{icon}}
+date: "{{date}}"
+url: {{url}}
+{{tags}}
+openExternal: {{openExternal}}
+draft: {{draft}}
+---
+
+{{{body}}}
+
+{{url}}
